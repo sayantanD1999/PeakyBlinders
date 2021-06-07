@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Peaky Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Mono:wght@100&family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <i class="fas fa-bars" onclick="showNav()"></i>
+
+<audio controls id="audio" style="display: none;">
+  <source src="theme.ogg" type="audio/ogg">
+  <source src="theme.mp3" type="audio/mpeg">
+</audio>
+
+  <div class="left-menu">
+    <img src="pics/logo.jpg">
+    <button id="home">Home</button>
+    <button id="starbut">Starring</button><br>
+    <button id="seabut">Seasons</button><br>
+    <button id="probut">Production</button>
+    <button id="rc">Real Characters</button>
+  </div>
+  <div class="right-menu">
+    <img src="pics/logo.jpg">
+    <button onclick="closeNav()" id="home">Home</button>
+    <button onclick="closeNav()" id="starbut">Starring</button><br>
+    <button onclick="closeNav()" id="seabut">Seasons</button><br>
+    <button onclick="closeNav()" id="probut">Production</button>
+    <button onclick="closeNav()" id="rc">Real Characters</button>
+  </div>
+
+
+
+  <div class="container-fluid" id="main">
+
+    <div class="container-fluid home">
+      <img id="home_img" src="pics/heading.jpg">
+
+
+      <p style="color: darkgray; ">Peaky Blinders is a British period crime drama
+        television series created by Steven Knight.
+        Set in Birmingham, England, the series follows the exploits of the <span
+          style="color: rgb(248, 20, 20);">Shelby</span> crime family in the direct aftermath of the First World War.
+
+        The fictional family is loosely based on a real 19th-century urban youth gang of the same name, who were
+        active
+        in the city from the <span style="color: floralwhite;">1890s</span>
+        to the early twentieth century.
+      </p>
+
+
+      <br>
+
+      <img id="home_img" src="pics/blade.jpg">
+
+      <br><br>
+      <p style="color: darkgray;">In 2018,after the show's Drama Series win at
+        the BAFTA TV Awards, Knight confirmed his <br>
+        <span style="color: rgb(233, 45, 12); font-family:Georgia, 'Times New Roman', Times, serif;">"ambition of
+          making
+          it a story of a family between two wars, and by ending it with the first air raid siren in
+          Birmingham"</span>
+        , <br>
+        which was 25 June 1940. After the conclusion of the fourth series, he confirmed that it would take another
+        three
+        series (seven in total) <br>
+        to complete the story up to that point.The fifth series premiered on BBC One on 25 August 2019 and finished on
+        22 September 2019. <br>
+        <span style="color: red;">Netflix</span>, under the deal with Weinstein Company and Endemol, had acquired the
+        rights to air Peaky Blinders in America & around the world.
+      </p>
+
+
+    </div>
+    <div class="stars">
+
+      <h2 style="text-align: center; color: crimson; ">Main Characters</h2>
+
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" >
+          <img id="col_img" src="pics/tommy.jpg" alt="Cinque Terre">
+          <div class="desc"> Thomas Shelby (OBE) <br> <span style="color:white;">Cillian Murphy</span></div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/arthur.jpg" alt="Cinque Terre">
+          <div class="desc">Arthur Shelby <br> <span style="color:white;">Paul Anderson</span></div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/john.jpg" alt="Cinque Terre">
+          <div class="desc">John Shelby <br> <span style="color:white;">Joe Cole</span></div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/finn.jpg" alt="Cinque Terre">
+          <div class="desc">Finn Shelby <br> <span style="color:white;">Hary Kirton</span></div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/polly.jpg" alt="Cinque Terre">
+          <div class="desc">Polly Gray <br> <span style="color:white;">Helen McCrory</span></div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/ada.jpg" alt="Cinque Terre">
+          <div class="desc">Ada Shelby <br> <span style="color:white;">Sophie Rundle</span></div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/campbell.jpg" alt="Cinque Terre">
+          <div class="desc">Chester Campbell <br> <span style="color:white;">Sam Neil</span></div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/churchill.jpg" alt="Cinque Terre">
+          <div class="desc">Winston Churchill <br> <span style="color:white;">Andy Nyman</span></div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/grace.jpg" alt="Cinque Terre">
+          <div class="desc">Grace Burgess <br> <span style="color:white;">Annabelle Wallis</span></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/linda.jpg" alt="Cinque Terre">
+          <div class="desc">Linda Shelby <br> <span style="color:white;">Kate Philips</span></div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/michael.jpg" alt="Cinque Terre">
+          <div class="desc">Michael Shelby <br> <span style="color:white;">Finn Cole</span></div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/esme.jpg" alt="Cinque Terre">
+          <div class="desc">Esme Shelby Lee <br> <span style="color:white;">Aimee Effion Edwards</span>
+          </div>
+
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/alfie.jpg" alt="Cinque Terre">
+            <div class="desc">Michael Shelby <br> <span style="color:white;">Finn Cole</span></div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/luca.jpg" alt="Cinque Terre">
+            <div class="desc">Luca Changretta <br> <span style="color:white;">Adrien Brody</span></div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/oswald.jpg" alt="Cinque Terre">
+            <div class="desc">Sir Oswald <br> <span style="color:white;">Sam Claffin</span></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/billy.jpg" alt="Cinque Terre">
+            <div class="desc">Billy Kimber <br> <span style="color:white;">Charlie Creed Miles</span></div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/lizzie.jpg" alt="Cinque Terre">
+            <div class="desc">Lizzie <br> <span style="color:white;">Natasha</span></div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/gold.jpg" alt="Cinque Terre">
+            <div class="desc">Aberama Gold <br> <span style="color:white;">Aidan Gillen</span></div>
+          </div>
+
+        </div>
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/moss.jpg" alt="Cinque Terre">
+          <div class="desc">Sergeant Moss <br> <span style="color:white;">Tony Pitts</span></div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/paky.jpg" alt="Cinque Terre">
+          <div class="desc">Packy Lee <br> <span style="color:white;">Johnny Dogs</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="seasons">
+
+      <img src="pics/pfb2.jpg" id="season_img">
+
+      <button id="s1" class="season_btn">Season 1 <br> 2013</button>
+      <div class="shows1" style="display:none">
+
+
+        <br>
+        <h3>Season 1 - Trailor</h3>
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/oVzVdvGIC7U" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+
+
+        <h3>Episode 1</h3>
+        <img src="pics/s1e1.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            8.2</span></i>
+        <p>Thomas Shelby plans to fix a horse race; some guns turn up stolen.</p>
+        <h3>Episode 2</h3>
+        <img src="pics/s1e2.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            8.4</span></i>
+
+        <p>Thomas Shelby starts a feud with a gypsy family and finally meets with Inspector
+          Campbell to talk about the stolen guns.</p>
+        <h3>Episode 3</h3>
+        <img src="pics/s1e3.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            8.4</span></i>
+        <p>Thomas is livid to find out that Ada and Freddie are married; IRA sympathizers tries to
+          get information from Thomas about the stolen guns.</p>
+        <h3>Episode 4</h3>
+        <img src="pics/s1e4.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            8.7</span></i>
+        <p>Thomas attempts to make a deal with Campbell; The Peaky's war with the Lees
+          intensifies.</p>
+        <h3>Episode 5</h3>
+        <img src="pics/s1e5.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            9.0</span></i>
+        <p>The Shelbys get a surprise visit by an almost forgotten relative. Thomas has one more
+          dangerous plan with the cops.</p>
+        <h3>Episode 6</h3>
+        <img src="pics/s1e6.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            9.2</span></i>
+        <p>Tommy and the Peaky Blinders prepare for a big operation, that quickly becomes way
+          trickier than they thought.</p>
+      </div>
+      <button id="s2" class="season_btn">Season 2 <br> 2014</button>
+      <div class="shows2" style="display:none">
+        <br>
+        <h3>Season 2 - Trailor</h3>
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/Ruyl8_PT_y8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <br>
+        <h3>Episode 1</h3>
+        <img src="pics/s2e1.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            8.6</span></i>
+        <p>When Birmingham crime boss Tommy Shelby's beloved Garrison pub is bombed, he finds
+          himself blackmailed into murdering an Irish dissident.</p>
+        <h3>Episode 2</h3>
+        <img src="pics/s2e2.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            8.5</span></i>
+
+        <p>After murdering an Irish dissident, Tommy has no choice but to be a pawn in Inspector
+          Campbell's treacherous political game.</p>
+        <h3>Episode 3</h3>
+        <img src="pics/s2e3.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            8.6</span></i>
+        <p>After joining London crime boss Alfie Solomons in a business venture, Tommy worries
+          that Alfie's newly revealed volatility could pose a problem.</p>
+        <h3>Episode 4</h3>
+        <img src="pics/s2e4.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            8.7</span></i>
+        <p>The Peaky Blinders take over London's Eden Club; Sabini convinces his old adversary
+          Alfie Solomons to join forces and eradicate the gan</p>
+        <h3>Episode 5</h3>
+        <img src="pics/s2e5.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            8.9</span></i>
+        <p>The Peaky Blinders are under attack. Tommy's power base in London is obliterated, and
+          both Arthur and Michael are arrested and imprisoned.</p>
+        <h3>Episode 6</h3>
+        <img src="pics/s2e6.jpg"><br>
+        <i class="fa fa-star" aria-hidden="true"> <span style="color: cornsilk;">
+            9.2</span></i>
+        <p>Tommy plans to execute the mission given to him by Campbell: the assassination of a
+          high-ranking member of the military establishment.</p>
+      </div>
+
+      <button id="s2" class="season_btn">Season 3 <br> 2016</button>
+      <button id="s2" class="season_btn">Season 4 <br> 2017</button>
+      <button id="s2" class="season_btn">Season 5 <br> 2019</button>
+
+      <br><br><br>
+
+      <h2 style=" color: red; font-size: larger;">Theme Song </h2>
+      <h3 style="font-family:sans-serif; color:honeydew; font-size: larger;">Red Right Hand By Nick Cave and The Bad
+        Seeds
+      </h3>
+      <br>
+      <br>
+      <iframe width="auto" height="315" src="https://www.youtube.com/embed/KGD2N5hJ2e0" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    </div>
+    <div class="production">
+
+
+
+
+      <h2>Series 1</h2>
+
+
+      <div class="row">
+        <div class="col-md-8">
+          <p> Peaky Blinders was created by <mark>Steven Knight</mark>, directed
+            by Otto Bathurst, and produced by <mark>Katie Swinden</mark>. The writers are listed as <span
+              style="color: red;">Steven Knight,
+              Stephen Russell and Toby Finlay</span>.Screen Yorkshire provided funding for the production through the
+            Yorkshire Content Fund,
+            ensuring that the majority of the show was filmed in Yorkshire as part of the deal.The series was filmed in
+            Birmingham,
+            Bradford, Dudley, Leeds, Liverpool, and Port Sunlight. Railway sequences were filmed between Keighley and
+            Damems,
+
+            using carriages from the Ingrow Museum of Rail Travel (owned by Vintage Carriages Trust),
+            and carriages owned by the Lancashire and Yorkshire Railway Trust. Many of the scenes for the show were shot
+            at
+            the Black Country Living Museum.
+            Ulster-born, New Zealand-raised Sam Neill enlisted the help of Northern Irish actors James Nesbitt and Liam
+            Neeson
+            to help him recover his lost
+            Northern Irish accent for the role of C.I. Campbell. In the end, he had to tone down the accent since the
+            series
+            is being marketed in the United States.
+            Controversially, the production did not hire linguists to assist in the show, leading to the Gypsies'
+            frequently
+            speaking broken Romanian (as opposed to Romani)
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="simg" data-aos="zoom-in"   data-aos-duration="3000" src="pics/pb1.jpg">
+        </div>
+      </div>
+
+
+
+
+
+      <h2>Series 2</h2>
+
+      <div class="row">
+        <div class="col-md-4">
+
+          <img class="simg" data-aos="zoom-in"  data-aos-duration="3000"  src="pics/pb2.jpg" alt="">
+        </div>
+        <div class="col-md-8">
+          <p> A second series was commissioned shortly after the broadcast of the
+            first and aired in October and November 2014. On 11 January 2014,
+            auditions were held in Digbeth area of Birmingham (near where parts of the series are set) for white and
+            mixed
+            race teenage male extras,
+            resulting in lengthy queues. </p>
+        </div>
+      </div>
+
+      <h2>Series 3</h2>
+
+      <div class="row">
+        <div class="col-md-8">
+          <p>
+            Shortly after the final episode of the second series, the show announced via its Twitter account that it had
+            been
+            renewed for a third series.
+            On 5 October 2015, the official Peaky Blinders Twitter account announced that filming had begun for series
+            3.
+
+            Filming wrapped on 22 January 2016, after 78 days of shooting.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="simg" data-aos="zoom-in"  data-aos-duration="3000" src="pics/pb3.jpg" alt="">
+        </div>
+      </div>
+
+
+      <h2>Series 4 & 5</h2>
+
+      <div class="row">
+        <div class="col-md-4"> <img class="simg" data-aos="zoom-in"  data-aos-duration="3000"  src="pics/pb4.jpg" alt=""> </div>
+        <div class="col-md-8">
+          <p> During the initial broadcast of series 3, the BBC renewed Peaky
+            Blinders for series 4 and 5, each of which comprises six episodes.
+            Filming for series 4 started in March 2017 and premiered on 15 November 2017 on BBC Two. The fourth series
+            did
+            not
+            include The Weinstein Company or its logo in its credits and will continue to no longer be included,
+            even though the company was formerly involved in the US distribution of the series.
+
+            On 22 August 2018, the BBC confirmed that series 5 would be broadcast on BBC One.
+            Having already premiered to a select audience at Birmingham Town Hall on 18 July 2019, the series began
+            airing
+            on
+            BBC One on 25 August 2019. </p>
+        </div>
+       
+      </div>
+
+
+
+      <h1>Directions</h1>
+      <table>
+
+        <tr>
+          <td>Series 1</td>
+          <td>
+            Otto Bathurst &
+            Tom Harper
+          </td>
+        </tr>
+        <tr>
+          <td>Series 2</td>
+          <td>Colm McCarthy</td>
+        </tr>
+        <tr>
+          <td>Series 3</td>
+          <td>Tim Mielants</td>
+        </tr>
+        <tr>
+          <td>Series 4</td>
+          <td>David Caffrey</td>
+        </tr>
+        <tr>
+          <td>Series 5</td>
+          <td>Anthony Byrne</td>
+        </tr>
+
+      </table>
+
+    </div>
+    <div class="real-characters">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div data-aos="fade-right"  data-aos-duration="3000" > 
+            <img  src="pics/harry.jpg" height="290px">
+            <p><span style="color: red;">Harry Fowles</span>, a member of the gang sporting the signature
+              overcoat and peaked flat cap.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div data-aos="fade-left"  data-aos-duration="3000" >
+            <img src="pics/gilbert.jpg">
+            <span style="color: red;">Thomas Gilbert</span> , a powerful member of
+            the gang.
+          </div>
+        </div>
+      </div>
+
+
+
+      <br><br>
+
+      <p>The Peaky Blinders were an urban street gang based in Birmingham, England, that operated from the end of the
+        19th
+        century
+        to after the First World War. The group, which grew out of the harsh economic deprivations of working class
+        Britain,
+        was composed largely of young men of lower to middle-classes. They derived social power from robbery, violence,
+        racketeering,
+        illegal bookmaking and the control of gambling. Members of this gang wore a signature outfit that included
+        tailored jackets,
+        lapel overcoats, button waistcoats, silk scarves, bell-bottom trousers, leather boots, and peaked flat caps.
+
+        The gang was highly organized with its own systems of hierarchy.
+
+
+
+        The Blinders’ dominance came about from beating rivals, such as the "Sloggers", whom they fought for
+        territory in
+        Birmingham and its surrounding districts. They held control for nearly 20 years until 1910, when a larger gang,
+
+        the Birmingham Boys led by Billy Kimber, overtook them. However, even though they had disappeared by the 1920s,
+
+        the name of the "Peaky Blinders" became synonymous slang for any street gang in Birmingham.
+      </p>
+
+      <h3>Notorious Members</h3>
+      <p>Contrary to popular belief, most Peaky Blinders were from the middle class and had jobs. The most powerful
+        member
+        of the Peaky Blinders
+        was a man known as Kevin Mooney. His real name was Thomas Gilbert, but he routinely changed his last name.
+        He initiated many of the land grabs undertaken by the gang.
+
+        Other prominent members of the gang were David Taylor, <span style="color: red;">Earnest Haynes, Harry Fowles,
+          and
+          Stephen McNickle</span> .
+        Harry Fowles, known as "Baby-faced Harry", was arrested at age 19 for stealing a bike in October 1904.
+        McNickle and Haynes were also arrested at the same time, for stealing a bicycle and home invasion, respectively.
+
+        Each was held for one month for their crimes. West Midlands police records described the three arrested
+        as "foul mouthed young men who stalk the streets in drunken groups, insulting and mugging passers-by.
+        Taylor was arrested at age 13 for carrying a loaded firearm.[13]
+
+        Many gang members were veterans of the <span style="color: red;">First World War</span> . Henry Lightfoot, the
+        first person to be named as a Peaky Blinder,
+        had joined the British Army three times in his life and participated in the Battle of the Somme in 1916.
+        One of the youngest members, Henry Fowler, was buried alive in the trenches and could not speak or see for some
+        time following the war.
+
+        The notorious gangster <span style="color: red;">Billy Kimber</span> was also a former Peaky Blinder.
+      </p>
+
+    </div>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
