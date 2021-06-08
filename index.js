@@ -2,19 +2,19 @@ window.onload=()=>{
   let song = document.getElementById("audio");
   song.play();
   song.loop=true;
-    document.getElementsByClassName("home")[0].style.display = "block";
-  document.getElementsByClassName("seasons")[0].style.display = "none";
-    document.getElementsByClassName("real-characters")[0].style.display = "none";
-    document.getElementsByClassName("productions")[0].style.display = "none";
-    document.getElementsByClassName("shows1")[0].style.display = "none";
-    document.getElementsByClassName("stars")[0].style.display = "none";
+//     document.getElementsByClassName("home")[0].style.display = "block";
+//   document.getElementsByClassName("seasons")[0].style.display = "none";
+//     document.getElementsByClassName("real-characters")[0].style.display = "none";
+//     document.getElementsByClassName("productions")[0].style.display = "none";
+//     document.getElementsByClassName("shows1")[0].style.display = "none";
+//     document.getElementsByClassName("stars")[0].style.display = "none";
 
-//   $(".home").show();
-//   $(".seasons").sty;
-//     $(".real-characters").hide();
-//     $(".production").hide();
-//     $(".shows1").hide();
-//     $(".stars").hide();
+  $(".home").show();
+  $(".seasons").hide();
+    $(".real-characters").hide();
+    $(".production").hide();
+    $(".shows1").hide();
+    $(".stars").hide();
 
 }
 
