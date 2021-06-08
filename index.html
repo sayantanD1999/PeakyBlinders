@@ -21,20 +21,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Mono:wght@100&family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Mono:wght@100&family=Stint+Ultra+Condensed&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
   <i class="fas fa-bars" onclick="showNav()"></i>
 
-<audio controls id="audio" style="display: none;">
+  <!-- <audio controls id="audio" style="display: none;">
   <source src="theme.ogg" type="audio/ogg">
   <source src="theme.mp3" type="audio/mpeg">
-</audio>
+</audio> -->
+
+  <embed src="theme.mp3" loop="true" autostart="true" style="display: none;"> </embed>
 
   <div class="left-menu">
     <img src="pics/logo.jpg">
@@ -44,13 +48,13 @@
     <button id="probut">Production</button>
     <button id="rc">Real Characters</button>
   </div>
-  <div class="right-menu" id="rm" >
+  <div class="right-menu" id="rm">
     <img src="pics/logo.jpg">
-    <button onclick="closeNav()" id="home">Home</button>
-    <button onclick="closeNav()" id="starbut">Starring</button><br>
-    <button onclick="closeNav()" id="seabut">Seasons</button><br>
-    <button onclick="closeNav()" id="probut">Production</button>
-    <button onclick="closeNav()" id="rc">Real Characters</button>
+    <button id="home">Home</button>
+    <button id="starbut">Starring</button><br>
+    <button id="seabut">Seasons</button><br>
+    <button id="probut">Production</button>
+    <button id="rc">Real Characters</button>
   </div>
 
 
@@ -98,92 +102,162 @@
     </div>
     <div class="stars">
 
-      <h2 style="text-align: center; color: crimson; ">Main Characters</h2>
+      <h1 style="text-align: center; color: crimson; ">Main Characters</h1>
 
       <div class="row">
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" >
-          <img id="col_img" src="pics/tommy.jpg" alt="Cinque Terre">
-          <div class="desc"> Thomas Shelby (OBE) <br> <span style="color:white;">Cillian Murphy</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/tommy.jpg" alt="Cinque Terre">
+            <div class="desc"> Thomas Shelby (OBE) <br> <span style="color:white;">Cillian Murphy</span></div>
+          </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/arthur.jpg" alt="Cinque Terre">
-          <div class="desc">Arthur Shelby <br> <span style="color:white;">Paul Anderson</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/arthur.jpg" alt="Cinque Terre">
+            <div class="desc">Arthur Shelby <br> <span style="color:white;">Paul Anderson</span></div>
+          </div>
         </div>
 
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/john.jpg" alt="Cinque Terre">
-          <div class="desc">John Shelby <br> <span style="color:white;">Joe Cole</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/john.jpg" alt="Cinque Terre">
+            <div class="desc">John Shelby <br> <span style="color:white;">Joe Cole</span></div>
+          </div>
         </div>
 
       </div>
 
       <div class="row">
 
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/finn.jpg" alt="Cinque Terre">
-          <div class="desc">Finn Shelby <br> <span style="color:white;">Hary Kirton</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/finn.jpg" alt="Cinque Terre">
+            <div class="desc">Finn Shelby <br> <span style="color:white;">Hary Kirton</span></div>
+          </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/polly.jpg" alt="Cinque Terre">
-          <div class="desc">Polly Gray <br> <span style="color:white;">Helen McCrory</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/polly.jpg" alt="Cinque Terre">
+            <div class="desc">Polly Gray <br> <span style="color:white;">Helen McCrory</span></div>
+          </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/ada.jpg" alt="Cinque Terre">
-          <div class="desc">Ada Shelby <br> <span style="color:white;">Sophie Rundle</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/ada.jpg" alt="Cinque Terre">
+            <div class="desc">Ada Shelby <br> <span style="color:white;">Sophie Rundle</span></div>
+          </div>
         </div>
 
       </div>
 
       <div class="row">
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/campbell.jpg" alt="Cinque Terre">
-          <div class="desc">Chester Campbell <br> <span style="color:white;">Sam Neil</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/campbell.jpg" alt="Cinque Terre">
+            <div class="desc">Chester Campbell <br> <span style="color:white;">Sam Neil</span></div>
+          </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/churchill.jpg" alt="Cinque Terre">
-          <div class="desc">Winston Churchill <br> <span style="color:white;">Andy Nyman</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/churchill.jpg" alt="Cinque Terre">
+            <div class="desc">Winston Churchill <br> <span style="color:white;">Andy Nyman</span></div>
+          </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/grace.jpg" alt="Cinque Terre">
-          <div class="desc">Grace Burgess <br> <span style="color:white;">Annabelle Wallis</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/grace.jpg" alt="Cinque Terre">
+            <div class="desc">Grace Burgess <br> <span style="color:white;">Annabelle Wallis</span></div>
+          </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/linda.jpg" alt="Cinque Terre">
-          <div class="desc">Linda Shelby <br> <span style="color:white;">Kate Philips</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/linda.jpg" alt="Cinque Terre">
+            <div class="desc">Linda Shelby <br> <span style="color:white;">Kate Philips</span></div>
+          </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/michael.jpg" alt="Cinque Terre">
-          <div class="desc">Michael Shelby <br> <span style="color:white;">Finn Cole</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/michael.jpg" alt="Cinque Terre">
+            <div class="desc">Michael Shelby <br> <span style="color:white;">Finn Cole</span></div>
+          </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/esme.jpg" alt="Cinque Terre">
-          <div class="desc">Esme Shelby Lee <br> <span style="color:white;">Aimee Effion Edwards</span>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/esme.jpg" alt="Cinque Terre">
+            <div class="desc">Esme Shelby Lee <br> <span style="color:white;">Aimee Effion Edwards</span>
+            </div>
           </div>
 
         </div>
 
 
         <div class="row">
-          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/alfie.jpg" alt="Cinque Terre">
-            <div class="desc">Alfie Solomons <br> <span style="color:white;">Tom Hardy</span></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+            <div>
+              <img id="col_img" src="pics/alfie.jpg" alt="Cinque Terre">
+
+              <div class="desc">Alfie Solomons <br> <span style="color:white;">Tom Hardy</span>
+            </div>
+            </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/luca.jpg" alt="Cinque Terre">
-            <div class="desc">Luca Changretta <br> <span style="color:white;">Adrien Brody</span></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+            <div>
+              <img id="col_img" src="pics/luca.jpg" alt="Cinque Terre">
+
+              <div class="desc">Luca Changretta <br> <span style="color:white;">Adrien Brody</span>
+            </div>
+            </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/oswald.jpg" alt="Cinque Terre">
-            <div class="desc">Sir Oswald <br> <span style="color:white;">Sam Claffin</span></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+            <div>
+              <img id="col_img" src="pics/oswald.jpg" alt="Cinque Terre">
+
+              <div class="desc">Sir Oswald <br> <span style="color:white;">Sam Claffin</span>
+            </div>
+            </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/billy.jpg" alt="Cinque Terre">
-            <div class="desc">Billy Kimber <br> <span style="color:white;">Charlie Creed Miles</span></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+            <div>
+              <img id="col_img" src="pics/billy.jpg" alt="Cinque Terre">
+
+              <div class="desc">Billy Kimber <br> <span style="color:white;">Charlie Creed Miles</span>
+            </div>
+            </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/lizzie.jpg" alt="Cinque Terre">
-            <div class="desc">Lizzie <br> <span style="color:white;">Natasha</span></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+            <div>
+              <img id="col_img" src="pics/lizzie.jpg" alt="Cinque Terre">
+
+              <div class="desc">Lizzie <br> <span style="color:white;">Natasha</span>
+            </div>
+            </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/gold.jpg" alt="Cinque Terre">
-            <div class="desc">Aberama Gold <br> <span style="color:white;">Aidan Gillen</span></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+            <div>
+              <img id="col_img" src="pics/gold.jpg" alt="Cinque Terre">
+
+              <div class="desc">Aberama Gold <br> <span style="color:white;">Aidan Gillen</span></div>
+            </div>
           </div>
 
         </div>
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/moss.jpg" alt="Cinque Terre">
-          <div class="desc">Sergeant Moss <br> <span style="color:white;">Tony Pitts</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/moss.jpg" alt="Cinque Terre">
+            <div class="desc">Sergeant Moss <br> <span style="color:white;">Tony Pitts</span></div>
+          </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up"  data-aos-duration="3000" ><img id="col_img" src="pics/paky.jpg" alt="Cinque Terre">
-          <div class="desc">Johnny Dogs <br> <span style="color:white;">Packy Lee</span></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div>
+            <img id="col_img" src="pics/paky.jpg" alt="Cinque Terre">
+            <div class="desc">Johnny Dogs <br> <span style="color:white;">Packy Lee</span></div>
+          </div>
         </div>
       </div>
     </div>
@@ -341,7 +415,7 @@
           </p>
         </div>
         <div class="col-md-4">
-          <img class="simg" data-aos="zoom-in"   data-aos-duration="3000" src="pics/pb1.jpg">
+          <img class="simg" data-aos="zoom-in" data-aos-duration="1000" src="pics/pb1.jpg">
         </div>
       </div>
 
@@ -354,7 +428,7 @@
       <div class="row">
         <div class="col-md-4">
 
-          <img class="simg" data-aos="zoom-in"  data-aos-duration="3000"  src="pics/pb2.jpg" alt="">
+          <img class="simg" data-aos="zoom-in" data-aos-duration="1000" src="pics/pb2.jpg" alt="">
         </div>
         <div class="col-md-8">
           <p> A second series was commissioned shortly after the broadcast of the
@@ -381,7 +455,7 @@
           </p>
         </div>
         <div class="col-md-4">
-          <img class="simg" data-aos="zoom-in"  data-aos-duration="3000" src="pics/pb3.jpg" alt="">
+          <img class="simg" data-aos="zoom-in" data-aos-duration="1000" src="pics/pb3.jpg" alt="">
         </div>
       </div>
 
@@ -389,7 +463,8 @@
       <h2>Series 4 & 5</h2>
 
       <div class="row">
-        <div class="col-md-4"> <img class="simg" data-aos="zoom-in"  data-aos-duration="3000"  src="pics/pb4.jpg" alt=""> </div>
+        <div class="col-md-4"> <img class="simg" data-aos="zoom-in" data-aos-duration="1000" src="pics/pb4.jpg" alt="">
+        </div>
         <div class="col-md-8">
           <p> During the initial broadcast of series 3, the BBC renewed Peaky
             Blinders for series 4 and 5, each of which comprises six episodes.
@@ -405,7 +480,7 @@
             on
             BBC One on 25 August 2019. </p>
         </div>
-       
+
       </div>
 
 
@@ -444,15 +519,15 @@
 
       <div class="row">
         <div class="col-md-6">
-          <div data-aos="fade-right"  data-aos-duration="3000" > 
-            <img  src="pics/harry.jpg" height="290px">
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <img src="pics/harry.jpg" height="290px">
             <p><span style="color: red;">Harry Fowles</span>, a member of the gang sporting the signature
               overcoat and peaked flat cap.
             </p>
           </div>
         </div>
         <div class="col-md-6">
-          <div data-aos="fade-left"  data-aos-duration="3000" >
+          <div data-aos="fade-left" data-aos-duration="1000">
             <img src="pics/gilbert.jpg">
             <span style="color: red;">Thomas Gilbert</span> , a powerful member of
             the gang.
