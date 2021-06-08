@@ -2,22 +2,16 @@ window.onload=()=>{
   let song = document.getElementById("audio");
   song.play();
   song.loop=true;
-//     document.getElementsByClassName("home")[0].style.display = "block";
-//   document.getElementsByClassName("seasons")[0].style.display = "none";
-//     document.getElementsByClassName("real-characters")[0].style.display = "none";
-//     document.getElementsByClassName("productions")[0].style.display = "none";
-//     document.getElementsByClassName("shows1")[0].style.display = "none";
-//     document.getElementsByClassName("stars")[0].style.display = "none";
-
-  $(".home").show();
-  $(".seasons").hide();
-    $(".real-characters").hide();
-    $(".production").hide();
-    $(".shows1").hide();
-    $(".stars").hide();
-
 }
 
+$(document).ready(function(){
+  $('.seasons').css('display','none');
+  $('.real-characters').css('display','none');
+  $('.production').css('display','none');
+  $('.shows1').css('display','none');
+  $('.stars').css('display','none');
+  $('.home').css('display','block');
+});
 
 $(document).ready(function () {
   $("button#home").click(function () {
@@ -84,13 +78,8 @@ function showNav() {
   document.getElementsByClassName("right-menu")[0].style.width = "60%";
 }
 
-function closeNav(){
-  document.getElementsByClassName("right-menu")[0].style.width = "0%";
-}
-document.addEventListener('click', function(e) {
-    var container = document.getElementById('rm');
-    if (!container.contains(e.target)) {
-        document.getElementsByClassName("right-menu")[0].style.width = "0%";
-    }
+document.addEventListener('mouseup', function(e) {
+  var container = document.getElementById('rm');
+  if (!container.contains(e.target) || container.contains(e.target) ) {
+    document.getElementsByClassName("right-menu")[0].style.width = "0%";  }
 });
-
