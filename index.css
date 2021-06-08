@@ -6,6 +6,8 @@ html, body {
     font-family: 'Roboto Mono', monospace;
     font-family: 'Stint Ultra Condensed', cursive;
     font-size: larger;
+    overflow-x: hidden;
+    
 }
 
 .fa-bars {
