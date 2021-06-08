@@ -7,7 +7,7 @@ html, body {
     font-family: 'Stint Ultra Condensed', cursive;
     font-size: larger;
     overflow-x: hidden;
-    
+
 }
 
 .fa-bars {
@@ -91,8 +91,10 @@ button:hover {
 }
 
 #col_img {
-    width: 100%;
+    width: 90%;
     height: 300px;
+    margin-left: 5%;
+    margin-right: auto;
 }
 
 #col_img:hover {
@@ -108,6 +110,9 @@ button:hover {
 }
 
 .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px !important;
     margin-bottom: 20px !important;
 }
@@ -181,13 +186,12 @@ td, th {
 }
 
 .simg{
-
     height: 100%;
     width: 100%;
     object-fit:cover;
 }
 
-@media all and (max-width:520px) {
+@media all and (max-width:540px){
     .home, .stars,.production, .real-characters {
         background-color: black;
         position: absolute;
@@ -241,3 +245,61 @@ td, th {
         height: 60%;
         width: 100%;
     }}
+
+   
+    @media (min-width: 600px) and (max-width: 1200px){
+    .home, .stars,.production, .real-characters {
+        background-color: black;
+        position: absolute;
+        color: gainsboro;
+        height: auto;
+        width: auto;
+        left: 0;
+        font-size: larger;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #home_img {
+        width: 100%;
+        left: 0;
+    }
+    .left-menu {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+        position: fixed;
+        float: right;
+        right: 0;
+        padding-right: 20px;
+        font-size: xx-large;
+        cursor: pointer;
+        padding-top: 20px;
+        color: aliceblue;
+        z-index: 1;
+    }
+    .right-menu {
+        width: 0%;
+        transition: 0.5s;
+    }
+    .seasons {
+        background-color: black;
+        position: absolute;
+        color: gainsboro;
+        height: auto;
+        width:100%;
+        font-size: larger;
+        text-align: justify;
+        left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #season_img {
+        padding-top: 20px;
+        height: 60%;
+        width: 100%;
+    }}
+
+   
