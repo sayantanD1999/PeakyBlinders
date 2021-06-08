@@ -79,7 +79,13 @@ function showNav() {
   document.getElementsByClassName("right-menu")[0].style.width = "60%";
 }
 
-function closeNav(){
-  document.getElementsByClassName("right-menu")[0].style.width = "0%";
-}
+// function closeNav(){
+//   document.getElementsByClassName("right-menu")[0].style.width = "0%";
+// }
+document.addEventListener('click', function(e) {
+    var container = document.getElementById('rm');
+    if (!container.contains(e.target) || container.contains(e.target) ) {
+        document.getElementsByClassName("right-menu")[0].style.width = "0%";
+    }
+});
 
